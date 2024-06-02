@@ -23,17 +23,28 @@
       margin-top: 20px;
     }
 
+    #introduccion {
+      padding: 20px;
+      text-align: left;
+    }
+    #introduccion h2 {
+      font-size: 24px;
+      color: white;
+    }
+    #introduccion p {
+      font-size: 16px;
+      color: white;
+    }
+
     .proyecto img {
       width: 150px;
       height: 150px;
       object-fit: cover;
       transition: transform 0.5s ease;
     }
-
     .proyecto img:hover {
       transform: scale(1.1);
     }
-
     .proyecto {
       text-align: center;
       background-color: white;
@@ -41,32 +52,35 @@
       border-radius: 5px;
       transition: box-shadow 0.5s ease, transform 0.5s ease;
     }
-
     .proyecto:hover {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transform: translateY(-5px);
     }
-
     .proyecto h3 {
       transition: color 0.5s ease;
-    }
-
-    .proyecto:hover h3 {
-      color: #ff4500;
     }
 
   </style>
 </head>
 <body>
   <section id="seccion1">
-    <h1>Páginas web</h1>
+    <h1>Páginas web para Minecraft
   </section>
-  <section id="proyectos"></section>
 
+  <section id="introduccion">
+    <h2>Bienvenidos a este sitio web. Aquí encontrarás páginas web que necesitas para tus mundos y servidores de Minecraft</h2>
+    <p>- Chunk Base: es una página web para ver el mapa de tu mundo y también podrás ver donde están las estructuras y biomas que buscas.
+    <p>- GeyserMC: en está página web podrás transformar tus servidores para que sean compatibles en java y bedrock.
+    <p>- Nether Portal Calculator: con está web podrás calcular el lugar del overworld donde aparecerás si entrás en un portal en el Nether.
+    <p>- Armor Trims: aquí podrás combinar diseños de armaduras hasta saber cuál es tú combinación favorita.
+    <p>- Vanilla Tweaks: gracias ha está web podrás hacer tu paquete de texturas personalizado y así podrás tener el Minecraft a tu gusto.
+    <p>- Enchantment Ordering Tool: en está web podrás poner los encantamientos que quieras y te dirá de qué forma te podrás gastar menos niveles de experiencia.
+  </section>
+
+  <section id="proyectos"></section>
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      alert("¡Bienvenido a esta página web!");
     });
   const datos = [
     { 
